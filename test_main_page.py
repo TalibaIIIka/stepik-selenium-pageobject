@@ -25,7 +25,6 @@ class TestLoginFromMainPage(object):
         page.should_be_login_link()
 
 
-@pytest.mark.skip
 def test_login_page(browser):
     link = 'http://selenium1py.pythonanywhere.com/en-gb/accounts/login/'
     page = LoginPage(browser, link)
@@ -33,7 +32,6 @@ def test_login_page(browser):
     page.should_be_login_page()
 
 
-@pytest.mark.skip
 def test_guest_cant_see_product_in_cart_opened_from_main_page(browser):
     link = 'http://selenium1py.pythonanywhere.com'
     page = MainPage(browser, link)
